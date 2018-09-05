@@ -7,7 +7,7 @@ import java.util.Random;
  */
 public class ExampleClass {
     // Random int between zero and three
-    int randZeroToNine = new Random().nextInt() % 3 ;
+    int randZeroToNine = new Random().nextInt() % n ;
 
     // Implementation change everytime, but thanks to factory, i cant still refer
     // to the interface and ignore the detail of create
