@@ -1,3 +1,0 @@
-<beans>
-    <bean id="triangle" class="Package.Triangle" />
-</beans>

@@ -6,14 +6,34 @@ import java.util.Random;
  * separate them from what stays the same" principle.
  */
 public class ExampleClass {
-    // Random int between zero and three
-    int randZeroToNine = new Random().nextInt() % n ;
 
-    // Implementation change everytime, but thanks to factory, i cant still refer
-    // to the interface and ignore the detail of create
-    UI userInterface = UIFactory(randZeroToNine);
+    private static void genericOperationICanDoOnEveryProduct(UIAbstractProduct product) {
+        product.createWindow();
+        product.drawWindow();
+        product.click();
+    }
 
-    userInterface.createWindow();
-    userInterface.drawOnWindow();
-    userInterface.click();
+    /**
+     * In this example we can see the dependecy inversion principle applyed.
+     * Our main class depends only on UIAbstractProduct.
+     * Alternative was to depend from every single concrete product.
+     * More the product, more the depend, more the risk and update necessary.
+     * Thank you factory pattern! :D
+     */
+    public static void main(String[] args) {
+        UIAbstractFactory linuxFactory = new LinuxConcreteFactory();
+        UIAbstractFactory windowsFactory = new WindowsConcreteFactory();
+
+        // Implementation change everytime, but thanks to factory, i cant still refer
+        // to the interface and ignore the detail of create
+        UIAbstractProduct linux = linuxFactory.init();
+        // Thanks to this pattern we can program to an interface,
+        // and depend upon abstractions instad of concrete classes.
+        // Dependency inversion, baby!
+        genericOperationICanDoOnEveryProduct(linux);
+        System.out.println("------");
+        UIAbstractProduct windows = windowsFactory.init();
+        genericOperationICanDoOnEveryProduct(windows);
+    }
+
 }
