@@ -13,6 +13,7 @@ public class ReceiverWorker {
 
     public void work() {
         workIntensity = HARD;
+        System.out.println("ReceiverWorker: work - i'll work hard!");
     }
 
     public void workMore() {
@@ -25,6 +26,8 @@ public class ReceiverWorker {
 
     public void rest() {
         workIntensity = ZZZ;
+        System.out.printf("%s - zzzz finally!%n",
+                Thread.currentThread().getStackTrace()[1]);
     }
 
     public int getIntensity() {
