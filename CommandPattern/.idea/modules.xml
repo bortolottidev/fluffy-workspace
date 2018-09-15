@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FirstSpring.iml" filepath="$PROJECT_DIR$/FirstSpring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/CommandPattern.iml" filepath="$PROJECT_DIR$/.idea/CommandPattern.iml" />
     </modules>
   </component>
 </project>
