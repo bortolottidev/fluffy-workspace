@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/FirstSpring/FirstSpring.iml" filepath="$PROJECT_DIR$/FirstSpring/FirstSpring.iml" />
       <module fileurl="file://$PROJECT_DIR$/LearnProject/LearnProject.iml" filepath="$PROJECT_DIR$/LearnProject/LearnProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/ObserverPattern/ObserverPattern.iml" filepath="$PROJECT_DIR$/ObserverPattern/ObserverPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SingletonPattern/SingletonPattern.iml" filepath="$PROJECT_DIR$/SingletonPattern/SingletonPattern.iml" />
     </modules>
   </component>
 </project>
